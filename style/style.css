@@ -1,0 +1,149 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../sofiapro/Fonts/sofiapro-light.otf);
+}
+body {
+    font-family: myFirstFont !important;
+    overflow-x: hidden !important
+}
+.navBar {
+  /* padding: 10px 20px; */
+  background-color: transparent !important; 
+  color: #000 !important; 
+  border: 1px solid black !important;
+}
+/* .navBar:hover {
+  padding: 10px 20px !important;
+  background-color: #000 !important; 
+  color: #fff !important; 
+  border: none !important;
+} */
+.bg-contact {
+  background-color: #FFD100;
+  width: 123px;
+  border-radius: 30px;
+}
+/* .pad {
+  padding-left: 60px;
+  padding-right: -60px;
+} */
+.bg-contact a {
+  color: #000;
+}
+.body-content  {
+  /* padding-top: 80px; */
+}
+.body-content .text-purple {
+  position: absolute;
+  top:1%;
+  left: .5%;
+}
+.footer {
+  background-color: #6F34FE !important;;
+}
+.body-content h1 {
+  font-size: 65px;
+  /* font-weight: bold; */
+  color: #6F34FE !important;
+}
+.body-content .stroke-body {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .005px;
+ -webkit-text-stroke-color: #6F34FE !important;
+  /* position: absolute; */
+  /* bottom: %; */
+  /* top: 10%; */
+ 
+}
+
+
+
+.type {
+  /* border-right: 5px solid lightblue; */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(25, end),
+             blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 1ch;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+.img-desktop {
+ background: url(./img/console.png);
+ width: 100%;
+ height: auto;
+ padding: 210px  ;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+.hover-bg:hover{
+ font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.btn-contact:hover {
+  box-shadow: 0px 16px 24px rgba(255, 209, 0, 0.25);
+}
+.btn-contact {
+  background-color: #FFD100;
+}
+.btn:hover {
+  outline: none !important;
+}
+.btn:focus {
+  outline: none !important; 
+}
+.about p{
+  font-size: 18px; 
+  color: #606060;
+}
+.bold-brief {
+  font-size: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .about p {
+    font-size: 14px; 
+
+  }
+  .bold-brief {
+    /* font-size: 22px; */
+  }
+  .body-content h1 {
+    font-size: 45px
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about p {
+    font-size: 12px; 
+
+  }
+  .stroke-body {
+    /* display: none !important; */
+  }
+  .bold-brief {
+    font-size: 20px;
+  }
+  .body-content h1 {
+    font-size: 30px
+  }
+}
