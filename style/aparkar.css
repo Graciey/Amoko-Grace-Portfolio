@@ -1,0 +1,43 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../sofiapro-light.otf);
+  }
+  body {
+      font-family: myFirstFont !important;
+      overflow-x: hidden !important
+  }
+.container-1 {
+    background-color: #005DFF;
+}
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #005DFF; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  .card-img {
+    background: url(../img/sade.jpg);
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50rem; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .card-img-2 {
+    background: url(../img/fort.jpg);
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50rem; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
